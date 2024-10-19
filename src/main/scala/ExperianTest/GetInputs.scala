@@ -6,9 +6,9 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 class GetInputs(spark: SparkSession, config: Config) {
   def getAllInputs: Map[String, DataFrame] = {
     Map(
-      "df1" -> getInfo(config, "base_1"),
-      "df2" -> getInfo(config, "base_2"),
-      "df3" -> getInfo(config, "base_3")
+      "df1" -> getInfo(config, "df_1"),
+      "df2" -> getInfo(config, "df_2"),
+      "df3" -> getInfo(config, "df_3")
     )
   }
 
